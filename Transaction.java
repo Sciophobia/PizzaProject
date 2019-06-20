@@ -10,7 +10,7 @@ public class Transaction {
     private int transactionId;
     private Order order;
     private PaymentType pType;
-
+    private Customer cust;
     //Constructor Method
     public Transaction(int _transactionId, Order _order, PaymentType _pType){
         this.transactionId = _transactionId;
@@ -22,6 +22,9 @@ public class Transaction {
     public int getTransactionId() { return transactionId; }
     public void setTransactionId(int _transactionId) {this.transactionId = _transactionId;}
 
+    public void setCustomer(Customer custe){
+        cust = custe;
+    }
     public Order getOrder() { return order; }
     public void setOrder(Order _order) {this.order = _order;}
 

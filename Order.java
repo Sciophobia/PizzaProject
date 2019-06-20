@@ -14,7 +14,15 @@ public class Order {
         this.orderId = _orderId;
     }
 
+
+    public void setCustomer(Customer Entry){
+        cust = Entry;
+    }
     //Setters and Getters
+
+    public Customer getCustomer(){
+        return cust;
+    }
     public int getorderId() {
         return orderId;
     }
@@ -43,6 +51,10 @@ public class Order {
             this.menuItem.add(item);
             //gathers total as quantity is added
             total+=item.getMenuPrice();
+        }
+
+        public ArrayList<Menu> getMenuItems(){
+            return menuItem;
         }
 
 
